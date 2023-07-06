@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assests/CSS/styles.css">
+    <title>Coding Quiz Game</title>
+</head>
+<header>
+    <h1>Coding Quiz <span>Test Your Knowledge!</span></h1>
+    <nav>
+        <button id="scoreboard" class="scoreboard">View Scoreboard</button>
+    </nav>
+</header>
+<body>
+    <section id="intro">
+        <h2>The Challenge</h2>
+        <p id="instructions">
+            You have 20 seconds to answer the following questions. <br>
+            Every question you answer correctly adds 3 seconds to the clock. <br>
+            Every question you answer incorrectly takes 5 seconds from the clock. <br>
+        </p>
+        <button id="begin">START</button>
+    </section>
+    
+    <section id="question">
+        <h2 id="question#"></h2>
+        <button id="answerA"></button>
+        <button id="answerB"></button>
+        <button id="answerC"></button>
+        <button id="answerD"></button>
+    </section>
+</body>
+<footer>
+    <h4 id="timer"></h4>
+</footer>
+<script src="Assests/JS/script.js"></script>
+<script src="Assests/JS/questions.js"></script>
+</html>

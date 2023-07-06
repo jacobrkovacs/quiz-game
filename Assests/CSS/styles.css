@@ -1,0 +1,91 @@
+:root{
+
+}
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header h1{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+header span{
+    font-size: 1.5rem;
+    color: grey;
+}
+
+ul{
+    list-style: none;
+}
+
+#scoreboard{
+    width: fit-content;
+    height: 35px;
+    background-color: aqua;
+    border: 2px solid rgb(43, 148, 148);
+    border-radius: 5px;
+}
+
+#scoreboard:hover{
+    opacity: 70%;
+    box-shadow: 0 0 6px;
+}
+
+#scoreboard:active{
+    box-shadow: inset 0 0 5px;
+}
+
+#intro{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#instructions{
+    display: flex;
+    text-align: center;
+}
+
+#begin{
+    margin: 50px;
+    height: 70px;
+    width: 200px;
+    font-size: 35px;
+    border: 3px solid black;
+    border-radius: 8px;
+    background-color: red;
+}
+
+#begin:hover{
+    opacity: 80%;
+    box-shadow: 0 0 10px;
+}
+
+#begin:active{
+    box-shadow: inset 0 0 10px;
+}
+
+#timer{
+    margin: 0;
+    font-size: 40px;
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+}
+
+#question{
+    display: none;
+
+}
