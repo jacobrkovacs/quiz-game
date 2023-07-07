@@ -2,8 +2,9 @@
 var startButton = document.querySelector("#begin")
 var timeRemaining = document.querySelector("#timer")
 var intro = document.querySelector("#intro")
-var scoreboard = document.querySelector("#scoreboard")
-var question = document.querySelector("#question")
+var scoreButton = document.querySelector("#scoreboard")
+var quiz = document.querySelector("#quiz")
+var answerA = document.querySelector("#answerA")
 
 var timer = 21;
 
@@ -16,10 +17,12 @@ function countdown(event){
         if(timer <= 10){
             timeRemaining.setAttribute("style", "color: red")
         }
-        if(timer === 0) {
+        if(timer < 0) {
             clearInterval(timerCountdown)
+            timeRemaining.setAttribute("style", "display: none;")
+            alert("TIME'S UP!")
         }
-    }, 1000, true);
+    }, 1000);
 }
 
 function displayQuestion(){
@@ -29,5 +32,14 @@ function displayQuestion(){
 startButton.addEventListener("click", countdown);
 startButton.addEventListener("click", function(){
     intro.setAttribute("style", "display: none")
-    scoreboard.setAttribute("style", "display: none")
+    scoreButton.setAttribute("style", "display: none")
+    quiz.setAttribute("style", "display: flex;")
+});
+
+answerA.addEventListener("click", function(){
+    timer = timer -5;
+    timeRemaining.textContent = timer;
+    if(timer <= 0) {
+        clearInterval(timerCountdown)
+    }
 });

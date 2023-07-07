@@ -7,6 +7,10 @@
 
 body{
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header{
@@ -85,7 +89,8 @@ ul{
     left: 15px;
 }
 
-#question{
+#quiz{
     display: none;
-
+    flex-direction: column;
+    align-items: flex-start;
 }
