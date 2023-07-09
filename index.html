@@ -7,18 +7,16 @@
 </head>
 <header>
     <h1>Coding Quiz <span>Test Your Knowledge!</span></h1>
-    <nav>
-        <button id="scoreboard" class="scoreboard">View Scoreboard</button>
-    </nav>
+    <button id="scoreboard" class="scoreboard">View Scoreboard</button>
 </header>
 <body>
     <section id="intro">
         <h2>The Challenge</h2>
-        <p id="instructions">
+        <div id="instructions">
             You have 20 seconds to answer the following questions. <br>
             Every question you answer correctly adds 3 seconds to the clock. <br>
             Every question you answer incorrectly takes 5 seconds from the clock. <br>
-        </p>
+        </div>
         <button id="begin">START</button>
     </section>
 
@@ -26,13 +24,17 @@
         
     </section>
     
-    <section id="quiz">
-        <h2 id="questionNumber">Sample Question #1</h2>
-        <p>This is the sample question</p>
-        <button id="answerA" data-correct="correct">Answer A</button>
-        <button id="answerB" data-wrong="wrong">Answer B</button>
-        <button id="answerC" data-wrong="wrong">Answer C</button>
-        <button id="answerD" data-wrong="wrong">Answer D</button>
+    <section class="quiz">
+        <h2 class="heading"></h2>
+        <p class="questions"></p>
+        <label for="button">A: </label>
+        <button class="answer"></button>
+        <label for="button">B: </label>
+        <button class="answer"></button>
+        <label for="button">C: </label>
+        <button class="answer"></button>
+        <label for="button">D: </label>
+        <button class="answer"></button>
     </section>
 </body>
 <footer>

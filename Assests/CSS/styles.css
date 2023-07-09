@@ -88,9 +88,3 @@ ul{
     bottom: 15px;
     left: 15px;
 }
-
-#quiz{
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-}
