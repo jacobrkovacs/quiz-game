@@ -88,3 +88,7 @@ ul{
     bottom: 15px;
     left: 15px;
 }
+
+.hide{
+    display: none;
+}
