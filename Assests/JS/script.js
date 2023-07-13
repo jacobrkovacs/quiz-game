@@ -52,11 +52,6 @@ const correctAnswers = [
 
 const duration = 21;
 
-function init() {
-    var scores = JSON.parse(localStorage.getItem(highscores));
-
-}
-
 function clickStart(){
     
     if (!timer) {
@@ -104,7 +99,6 @@ function questionAnswered(){
             event.target.classList.add("correct");
             setTimeout(populateAnswers, 750);
             score = score + 5;
-            console.log(score)
             setTimeout(cleanup, 750);
             handleGameEnd();
         }else{
@@ -171,7 +165,6 @@ function handleGameEnd(){
     }   
 }
 
-init();
 populateAnswers();
 questionAnswered();
 startButtonEl.addEventListener("click", clickStart);
