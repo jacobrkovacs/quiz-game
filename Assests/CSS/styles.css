@@ -50,14 +50,14 @@ ul{
     box-shadow: inset 0 0 5px;
 }
 
-#intro{
+.intro{
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#instructions{
+.instructions{
     display: flex;
     text-align: center;
 }
@@ -91,4 +91,21 @@ ul{
 
 .hide{
     display: none;
+}
+
+#answers{
+    display: flex;
+    flex-direction: column;
+}
+
+.answer{
+    margin: 5px;
+}
+
+.correct{
+    background-color: green;
+}
+
+.wrong{
+    background-color: red;
 }

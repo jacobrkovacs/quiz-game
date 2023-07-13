@@ -10,12 +10,19 @@
     <button id="scoreboard" class="scoreboard">View Scoreboard</button>
 </header>
 <body>
-    <section id="intro">
-        <h2>The Challenge</h2>
-        <div id="instructions">
+
+    <section class="hide score">
+        <h2 id="score"></h2>
+        <h4>Input you initials to keep your score!</h4>
+        <input id="input" type="text"><button type="submit" id="submit">Submit</button>
+
+    </section>
+
+    <section class="intro">
+        <h2 class="challenge">The Challenge</h2>
+        <div class="instructions">
             You have 20 seconds to answer the following questions. <br>
-            Every question you answer correctly adds 3 seconds to the clock. <br>
-            Every question you answer incorrectly takes 5 seconds from the clock. <br>
+            Every question you answer incorrectly takes 3 seconds from the clock. <br>
         </div>
         <button id="begin">START</button>
     </section>
@@ -24,17 +31,15 @@
         
     </section>
     
-    <section class="quiz">
+    <section class="quiz hide">
         <h2 class="heading"></h2>
         <p class="questions"></p>
-        <label for="button">A: </label>
-        <button class="answer"></button>
-        <label for="button">B: </label>
-        <button class="answer"></button>
-        <label for="button">C: </label>
-        <button class="answer"></button>
-        <label for="button">D: </label>
-        <button class="answer"></button>
+        <div id = "answers">
+            <button class="answer"></button>
+            <button class="answer"></button>
+            <button class="answer"></button>
+            <button class="answer"></button>
+        </div>
     </section>
 </body>
 <footer>
