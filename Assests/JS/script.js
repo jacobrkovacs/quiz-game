@@ -1,19 +1,19 @@
-
-var startButtonEl = document.querySelector("#begin")
-var timeRemainingEl = document.querySelector("#timer")
-var quizEl = document.querySelector(".quiz")
-var introEl = document.querySelector(".intro")
-var challengeEl = document.querySelector(".challenge")
-var instructionEl = document.querySelector(".instructions")
-var scoreButtonEl = document.querySelector(".scoreboard")
-var headingEl = document.querySelector(".heading")
-var questionEl = document.querySelector(".questions")
-var answerEl = document.getElementById("answers")
-var answerBtnEl = document.getElementsByClassName(".answer")
-var initialInput = document.querySelector(".score")
-var finalScore = document.getElementById("score")
-var submitBtn = document.getElementById("submit")
-var input = document.getElementById("input")
+var startButtonEl =    document.querySelector("#begin")
+var timeRemainingEl =  document.querySelector("#timer")
+var quizEl =           document.querySelector(".quiz")
+var introEl =          document.querySelector(".intro")
+var challengeEl =      document.querySelector(".challenge")
+var instructionEl =    document.querySelector(".instructions")
+var scoreButtonEl =    document.getElementById("scoreboard")
+var scoreboard =       document.querySelector(".scoreboard")
+var headingEl =        document.querySelector(".heading")
+var questionEl =       document.querySelector(".questions")
+var answerEl =         document.getElementById("answers")
+var answerBtnEl =      document.getElementsByClassName(".answer")
+var initialInput =     document.querySelector(".score")
+var finalScore =       document.getElementById("score")
+var submitBtn =        document.getElementById("submit")
+var input =            document.getElementById("input")
 
 var timer = null;
 var timeRemaining = 0;
@@ -53,7 +53,6 @@ const correctAnswers = [
 const duration = 21;
 
 function clickStart(){
-    
     if (!timer) {
         timeRemaining = duration
         timer = setInterval(countdown, 1000)
@@ -126,9 +125,11 @@ function showScoreboard() {
     hideElement(startButtonEl)
     hideElement(instructionEl)
     hideElement(challengeEl)
+    showElement(scoreboard)
 }
 
 function storeScore(){
+
     localStorage.setItem("scores", newScore)
 }
 
@@ -159,9 +160,7 @@ function handleGameEnd(){
         }
         clickedCorrect = correctAnswers[i];
         showElement(initialInput)
-
         return
-
     }   
 }
 
