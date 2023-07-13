@@ -94,7 +94,7 @@ var clickedCorrect;
 function questionAnswered(){
     clickedCorrect = correctAnswers[i]
     answerEl.addEventListener("click", function(event){
-        event.stopPropagation();
+        event.stopPropagation(answerEl);
         if(event.target.innerText == clickedCorrect){
             event.target.classList.add("correct");
             setTimeout(populateAnswers, 750);
@@ -129,7 +129,7 @@ function showScoreboard() {
 }
 
 function storeScore(){
-    localStorage.setItem("scores", score)
+    localStorage.setItem("scores", newScore)
 }
 
 function hideElement(element){
